@@ -1,0 +1,20 @@
+<section>
+  <h2>ToDo</h2>
+  <ul class="tasks">
+    <li *ngFor="let toDo of toDoTasks">
+      <a routerLink="/task-details/{{id}}">
+        <span class="badge id-{{id}}">{{toDo.title}}</span>
+      </a>
+    </li>
+  </ul>
+</section>
+<section>
+  <h2>Done</h2>
+  <ul class="tasks">
+    <li *ngFor="let done of doneTasks">
+      <a routerLink="/task-details/{{id}}">
+        <span class="badge id-{{id}}">{{done.title}}</span>
+      </a>
+    </li>
+  </ul>
+</section>
